@@ -6,7 +6,7 @@ class EmployeeForm(forms.ModelForm):
         model = Employee
         fields = ['name','contact','email']
         widgets = {'name': forms.TextInput(attrs={'class':'form-control'}),
-            'email': forms.EmailField(attrs={'class':'form-control'}),
+            'email': forms.EmailInput(attrs={'class':'form-control'}),
             'contact': forms.TextInput(attrs={'class':'forms-control'}),
       }
         
